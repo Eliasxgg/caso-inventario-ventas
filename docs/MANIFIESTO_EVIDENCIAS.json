@@ -1,0 +1,326 @@
+[
+  {
+    "archivo": "img/01-portada.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 712,
+    "sha256": "c2284a7f401e4eb95912b9b56584d6d62995d0518934a8723bdb1b9071ff576f"
+  },
+  {
+    "archivo": "img/02-login.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/login",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 757,
+    "sha256": "9469f5ad2cc5dfc6f880f2889d355dd81b009fa950e981f71ddd5529769b939f"
+  },
+  {
+    "archivo": "img/03-dashboard.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/inicio",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1484,
+    "sha256": "6e6bb4e483d1b79d596bf5759a2c850fc70f79bd4c7423c9133b0e0896eb9030"
+  },
+  {
+    "archivo": "img/04-productos.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/products",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 991,
+    "sha256": "9955f8a581dd08f941ffdddadf30f5f3681a1cd34f32d7f642541e0a052da359"
+  },
+  {
+    "archivo": "img/05-nuevo-producto.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/products/create",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 831,
+    "sha256": "2e094ea53da8a79bce86ddaf48ea85286df633a050676511de650deb3fb2329e"
+  },
+  {
+    "archivo": "img/06-producto-creado.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/products/30",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 781,
+    "sha256": "0377869b6a46be8543e955f947e83323e1c6f7876aea85c54e32c29c9e6c2655"
+  },
+  {
+    "archivo": "img/07-entradas.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/stocks",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1319,
+    "sha256": "0796a3a7034579f0438f0bcac10eccd0590e43457f55bb5aa9fc034b6bbd11e8"
+  },
+  {
+    "archivo": "img/08-nueva-entrada.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/stocks/create",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 939,
+    "sha256": "fafad859e653378da3636ff6d49c22a99689140c48c32b6c56aee8add7b990d9"
+  },
+  {
+    "archivo": "img/09-entrada-registrada.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/stocks",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1381,
+    "sha256": "b6f8ab4a2fa88e7e9381f1951e6d1cc59157b46ed9580cb17e0caae573e987e3"
+  },
+  {
+    "archivo": "img/10-seleccionar-producto-venta.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/sales/create",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1020,
+    "sha256": "f87eb1afbc86a33aee0ee86cef65b0c2db813123130e05f4819819a91f7b0c02"
+  },
+  {
+    "archivo": "img/11-venta-lista.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/sales/create",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1064,
+    "sha256": "9ba4ee3633039a704d33a27a27ca4bf957c2b25a48c122aec4d78063c394ee27"
+  },
+  {
+    "archivo": "img/12-venta-registrada.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/sales",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1890,
+    "sha256": "69248f5c7bf580a0ed7b9f45793538311e2bb42cbc15b50c733dbf20e993a609"
+  },
+  {
+    "archivo": "img/13-detalle-venta.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/sales/296",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 806,
+    "sha256": "21f4f448376dd29fd32137cc27998aaf7bf82098aed64e56b3897be42b026de9"
+  },
+  {
+    "archivo": "img/14-categorias.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/categories",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 757,
+    "sha256": "1d2b16c06d59ef3b9b12f3aedd88cd6609ad53a2226e4b29e7a7cc111c133b59"
+  },
+  {
+    "archivo": "img/15-formulario-categoria.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/categories/create",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 757,
+    "sha256": "2286ff51f2712b19c83da60a40bf585bbb0a550daf1dd880d0ba1dba0de9ff88"
+  },
+  {
+    "archivo": "img/16-centro-reportes.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reports/basic",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1358,
+    "sha256": "65dcb4230fa740c50769c2ca57412ae4b58e4c478c6ff404dae7d433e403d9f4"
+  },
+  {
+    "archivo": "img/17-ventas-por-dia.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/ventas-periodo",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1450,
+    "sha256": "68a9157749d72e03dbbb0a6ee27837238182a1c6c259a806a27e637bda381314"
+  },
+  {
+    "archivo": "img/18-ventas-por-semana.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/ventas-periodo?start_date=2026-10-23&end_date=2026-11-22&group_by=week",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1450,
+    "sha256": "9d0c8f6451d0cae63979282559232c47624edc12aaa70bac288e842f88376a1d"
+  },
+  {
+    "archivo": "img/19-top-productos.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/top-productos",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1700,
+    "sha256": "9c40c20f6d64a1ea39527839481f6e73f162aa1339c9c29d915c7ef77c9e49a9"
+  },
+  {
+    "archivo": "img/20-inventario-completo.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/inventario-completo",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1700,
+    "sha256": "523eadc80db904c7af268e41bf06f57622aab3b4ff9ce63d7162ecf22df36ee7"
+  },
+  {
+    "archivo": "img/21-sin-movimiento.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/sin-movimiento",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1278,
+    "sha256": "a17146da34501d84d0f14d1df634dbd7e0e0c8f663424be9f8b1ae459ac95322"
+  },
+  {
+    "archivo": "img/22-ventas-categorias.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/avanzados",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 712,
+    "sha256": "ea89ce20f4694af9d6528ebb2ebb27bde0afd91e07cfc26974a99d8726d9b6a4"
+  },
+  {
+    "archivo": "img/23-movimientos-stock.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/avanzados?tab=movements&start_date=2026-11-01&end_date=2026-11-22",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1034,
+    "sha256": "c8bbd3b0d476b9ee3740de36c86ff4be115dbba9b21bd240e54b9181080f5a4b"
+  },
+  {
+    "archivo": "img/24-ganancias.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/avanzados?tab=profit&start_date=2026-11-01&end_date=2026-11-22",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1800,
+    "sha256": "4a6dae7f91c5e5142f3d7f112f95fc074d5f2cb28c59bebf2b48a33a5e00fa00"
+  },
+  {
+    "archivo": "img/25-exportar-csv.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/avanzados?tab=export&start_date=2026-11-01&end_date=2026-11-22",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1132,
+    "sha256": "56f45e4c0ba3fae3f88c629515815f6e6fda33bc170585d65153547915de7599"
+  },
+  {
+    "archivo": "img/26-filtro-stock-critico.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/inventario-completo",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1500,
+    "sha256": "2339b6a966f345aa75d7254a28905253d6ea26d75999614f333f52b84508ab8f"
+  },
+  {
+    "archivo": "img/27-producto-despues-venta.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/products/30",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 970,
+    "sha256": "22bce847789012c4ea0e68ea904e0455ca668e858de39772a603084d1e413362"
+  },
+  {
+    "archivo": "img/28-editar-producto.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/products/30/edit",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 831,
+    "sha256": "c915ab30902700ef3d653fcfa48c448065c3371df0afcfdcd40ec4b9738f9b49"
+  },
+  {
+    "archivo": "img/29-editar-lote.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/stocks/51/edit",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 939,
+    "sha256": "0511f633c46bb8185e2125e58b4c66a56c80caa0e885e7abec9eafc9fc3d90db"
+  },
+  {
+    "archivo": "img/30-filtros-ventas.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/sales?id=296&fecha_inicio=&fecha_fin=&min_total=&max_total=",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1179,
+    "sha256": "6ca5fbb42d9cc1edf680f93d150db9fb5fd684636d5c71f07c2a4d2e94027db8"
+  },
+  {
+    "archivo": "img/31-registro.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/register",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 757,
+    "sha256": "ae26a09d9797ce3589301c7b3a1a96109b07c170be4ef26ac42f7b5d6641b88f"
+  },
+  {
+    "archivo": "img/32-perfil-demo.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/profile",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1400,
+    "sha256": "cf00a66f266c812804028530dd445e5c1ff1a98ece6227736558c541e16762bb"
+  },
+  {
+    "archivo": "img/33-ventas-por-mes.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/ventas-periodo?start_date=2026-10-23&end_date=2026-11-22&group_by=month",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1450,
+    "sha256": "014c4bab7a8c1274502da71242382146354eff92723716d5d456cb4d86cb68d0"
+  },
+  {
+    "archivo": "img/34-alerta-sin-stock.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/sales/create",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 1020,
+    "sha256": "b362d1a580dd7ad85ad962dcd3b1b9ff68aff8c5c1996c6b36a569528d7f220c"
+  },
+  {
+    "archivo": "img/35-grafico-categorias.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/avanzados",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 712,
+    "sha256": "f0a407b207bbf2743e42b47788e48e61fa9fb72a0066a8c54b420d39e003313b"
+  },
+  {
+    "archivo": "img/36-tabla-categorias.jpg",
+    "fecha": "2026-11-22",
+    "ruta_aplicacion": "/reportes/avanzados",
+    "datos": "ficticios",
+    "ancho": 1265,
+    "alto": 712,
+    "sha256": "9034b4bd1d6f9d5e5705b5188ac19e160d38f27281b82f96cd948f60523ec37c"
+  }
+]

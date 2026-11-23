@@ -1,0 +1,10 @@
+.env
+.env.*
+*.sql
+*.dump
+*.bak
+*.key
+*.zip
+*.rar
+.DS_Store
+Thumbs.db

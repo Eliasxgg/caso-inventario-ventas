@@ -1,0 +1,35 @@
+{
+  "tipo": "datos_sinteticos_academicos",
+  "fecha_corte": "2026-11-22",
+  "periodo_ventas": [
+    "2026-08-31 08:10:00",
+    "2026-11-22 15:34:21"
+  ],
+  "categorias": 6,
+  "productos": 25,
+  "lotes": 50,
+  "ventas": 295,
+  "unidades_disponibles": 660,
+  "valor_inventario_precio_venta": 892.9,
+  "productos_stock_critico": 3,
+  "productos_agotados": 1,
+  "lotes_stock_bajo_incluye_agotados": 25,
+  "sin_movimiento_30_dias": {
+    "productos": 3,
+    "unidades": 61,
+    "valor_precio_venta": 85.55
+  },
+  "mes_actual": {
+    "desde": "2026-11-01",
+    "hasta": "2026-11-22",
+    "ventas_unicas": 80,
+    "ingresos": 816.2,
+    "costo_mercaderia": 494.05,
+    "margen_bruto": 322.15,
+    "porcentaje_margen_bruto": 39.47
+  },
+  "verificacion": {
+    "productos_con_desbalance": [],
+    "ventas_con_total_inconsistente": 0
+  }
+}
