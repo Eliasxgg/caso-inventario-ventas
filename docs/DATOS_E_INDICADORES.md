@@ -1,46 +1,97 @@
-# Datos, indicadores y lectura
+# De los registros diarios a la información del negocio
 
-## Origen y corte
+## La finalidad de los datos en QUANTY
 
-La cuenta ficticia Tienda Horizonte se creó para demostrar el sistema sin utilizar ventas de una empresa ni datos de clientes. La población automática genera 6 categorías, 24 productos, 49 lotes y 294 ventas entre el 31/08 y el 22/11/2026. Después se ejecutó desde la interfaz el alta de la granola, una entrada de 30 unidades y una venta con dos productos: el corte final tiene **25 productos, 50 lotes y 295 ventas**. Son ventas registradas de demostración, no 295 clientes ni ventas comerciales reales.
+QUANTY busca que el propietario deje de mantener información dispersa y pueda relacionar productos, entradas y ventas. Los reportes son una parte de ese proceso: presentan lo que el negocio ha registrado para que pueda revisar existencias, movimientos y resultados operativos.
 
-Las fechas de la población se calculan respecto al día de ejecución. En una reproducción posterior, el historial cambia de fechas y los filtros deben ajustarse. Las capturas conservan el corte del 22/11/2026.
+La herramienta es general. No presupone que todos los negocios tengan el mismo catálogo ni que deban llegar a las mismas conclusiones. Cada cuenta registra sus artículos y operaciones; los filtros y gráficos presentan la información correspondiente a esa cuenta.
 
-## Interpretar cada indicador
+Los datos de la demostración son ficticios. Se usan para que se vean las funciones y puedan explicarse situaciones de uso. No constituyen un estudio de mercado, una muestra de empresas ni un conjunto del que deban extraerse hallazgos comerciales sobre QUANTY.
 
-| Indicador | Definición y alcance | Resultado en la evidencia |
+## Qué información se construye en cada paso
+
+| Registro | Qué representa | Con qué se relaciona |
 |---|---|---|
-| Ventas del día | Suma de ventas del 22/11, cuenta de evidencias | $52.15 en 6 operaciones |
-| Ventas del mes | Ventas únicas del 01/11 al 22/11 | $816.20 en 80 operaciones |
-| Ventas por período | Intervalo inclusivo 23/10–22/11 | $1,153.60 en 111 operaciones |
-| Ticket promedio del período | Importe del período / ventas únicas | $10.39 |
-| Período previo | 22/09–22/10, también 31 días | $1,142.85; variación redondeada +0.9% |
-| Stock por producto | Suma de cantidad disponible de sus lotes | 660 unidades en toda la cuenta |
-| Productos críticos | Stock mayor que cero y menor o igual que tres | 3 productos |
-| Productos agotados | Stock total igual a cero | 1 producto |
-| Alerta del panel por lote | Lotes con cantidad disponible menor o igual que tres, incluidos lotes agotados | 25 lotes; no 25 productos críticos |
-| Valor de inventario | Existencias × precio de venta | $892.90; no costo de adquisición |
-| Sin movimiento | Productos con stock sin ventas en 30 días | 3 productos, 61 unidades, $85.55 a precio de venta |
-| Top 10 | Diez productos ordenados por unidades vendidas en noviembre | 336 unidades y $430.45 del subconjunto |
-| Margen bruto | Ingreso menos costo de mercadería registrado en detalles | $322.15 = $816.20 − $494.05; 39.47% |
-| Entradas del mes | Lotes creados dentro del período | 2 entradas, 38 unidades, costo $40.00 |
+| Cuenta | Propietario que utiliza la aplicación | Catálogo y operaciones asociados al usuario |
+| Categoría | Grupo para organizar productos | Productos y lectura de ventas por grupo |
+| Producto | Artículo del catálogo | Entradas, existencias y líneas de venta |
+| Entrada o lote | Mercadería recibida con cantidad y precios | Unidades disponibles y futuras salidas |
+| Venta | Operación registrada en una fecha | Uno o varios detalles de productos |
+| Detalle de venta | Producto, cantidad, precio y valores de esa línea | Total de la operación y reportes |
 
-En las filas por categoría, una venta con artículos de varias categorías aparece una vez en cada categoría correspondiente. La suma de esas participaciones no representa ventas únicas. El KPI general usa 80 ventas únicas. En los filtros de inventario y ventas, los KPI superiores pueden mantener el resumen global mientras la tabla muestra el subconjunto seleccionado.
+```mermaid
+flowchart LR
+    C["Catálogo del propietario"] --> E["Entradas de mercadería"]
+    E --> D["Existencias por lote"]
+    D --> V["Ventas y sus detalles"]
+    V --> A["Actualización de existencias"]
+    V --> R["Reportes del período"]
+    A --> R
+    R --> P["Información para revisar la operación"]
+```
 
-El margen bruto no es utilidad neta: no incluye salarios, alquiler, impuestos, mermas u otros gastos. Esta simulación mantiene el costo de un producto constante entre lotes. El código descuenta lotes por FIFO y toma el último costo al registrar una venta; queda pendiente resolver y probar la valoración cuando los costos de lotes sean distintos.
+Una entrada aumenta la disponibilidad y una venta consume unidades. El catálogo describe los artículos, mientras que el historial permite saber qué movimientos se registraron. Esta relación es lo que hace útil la información posterior.
 
-## Ejemplos de lectura
+## Qué permite leer cada reporte
 
-En [categorías](img/35-grafico-categorias.jpg), Abarrotes aporta $231.75, un 28.4% de los $816.20 del período mensual. Ese aporte no basta para concluir que sea la categoría más rentable: también hay que comparar costos y gastos.
+| Pantalla | Información que organiza | Uso posible para el propietario |
+|---|---|---|
+| Panel | Ventas del día y mes, cantidad de productos y alertas | Ubicar rápidamente el estado de la operación |
+| Ventas por período | Importe, cantidad de ventas, ticket promedio y tendencia | Revisar un intervalo y compararlo con otro de duración comparable |
+| Top de productos | Unidades e importes de los artículos del ranking | Ver qué productos se están vendiendo más dentro del filtro |
+| Inventario completo | Existencias por producto, lotes y estado | Revisar disponibilidad, artículos críticos y agotados |
+| Sin movimiento | Productos con stock que no tuvieron ventas recientes | Revisar mercadería detenida, vencimientos y próximas compras |
+| Categorías | Cantidades e ingresos agrupados | Observar cómo se distribuyen las ventas entre grupos de productos |
+| Movimientos | Entradas realizadas en el período | Consultar recepciones, cantidades y costo de la mercadería incorporada |
+| Ganancias | Ingresos y costo de mercadería registrado | Revisar un margen bruto orientativo por producto y período |
+| CSV | Líneas de venta del período | Conservar o revisar el detalle en una hoja de cálculo |
 
-En [sin movimiento](img/21-sin-movimiento.jpg), cepillo dental, queso fresco y crema acumulan 61 unidades sin ventas en 30 días. En un negocio real revisaría demanda, ubicación, vencimientos y cantidades antes de proponer promociones o reposiciones. Los $85.55 son valor potencial de venta; no una pérdida realizada.
+Estos usos son la finalidad de las pantallas. No son conclusiones que obliguen a comprar, descontar o retirar un producto sin revisar el contexto del negocio.
 
-La [tendencia semanal](img/18-ventas-por-semana.jpg) resume los mismos 31 días que la diaria. Las semanas de los extremos son parciales; no deben compararse como si tuvieran igual duración. La agrupación mensual también contiene dos meses parciales. Las oscilaciones son propias del generador de datos, no evidencia de estacionalidad del mercado.
+## Ejemplos para entender la utilidad
 
-## Archivos y verificación
+### Un artículo vende y queda poco
 
-[resumen-demostracion.json](../datos/resumen-demostracion.json) se obtuvo con consultas de lectura. Se contrastó que las entradas menos las cantidades vendidas coincidan con las existencias y que cada venta coincida con la suma de sus detalles: no se encontraron desbalances en este corte.
+Una tienda podría revisar un producto con ventas frecuentes y pocas unidades disponibles. QUANTY permite ver su stock y sus ventas; el propietario podría contrastar esa información con el tiempo que tarda en recibir nueva mercadería y decidir si necesita reponer.
 
-[ventas-simuladas-noviembre.csv](../datos/ventas-simuladas-noviembre.csv) procede de una descarga real de la interfaz. Contiene 80 ID de venta distintos y sus líneas suman $816.20. El encabezado heredado «Total Venta» corresponde al subtotal de cada línea; para obtener una venta completa hay que agrupar sus filas por ID. No se debe repetir el total de la venta por cada producto ni contar cada fila como una transacción distinta.
+La aplicación organiza los datos necesarios para esa revisión. No calcula por sí sola toda la demanda futura ni conoce las condiciones del proveedor.
 
-La comprobación automatizada final cubre 28 pruebas y 408 verificaciones. Es evidencia de los recorridos y del balance de esta población; no equivale a comprobar todas las combinaciones, concurrencia o aptitud para producción.
+### Hay mercadería sin ventas recientes
+
+Si una tienda tuviera datos como los de la captura de productos sin movimiento, podría identificar los artículos que conserva sin ventas dentro del intervalo seleccionado. A partir de ahí puede revisar su ubicación, presentación, vencimiento o conveniencia de una nueva compra.
+
+No sería correcto concluir automáticamente que el producto es malo, que debe descontarse o que ya produjo una pérdida. La finalidad del reporte es hacer visible una situación que merece revisión.
+
+### Una entrada y una venta deben coincidir con lo disponible
+
+El recorrido visual incorpora 30 unidades de granola y después vende dos. El resultado disponible es 28. Esa operación sencilla muestra la relación entre entrada, venta y saldo; no se presenta como un resultado comercial del proyecto.
+
+### Una categoría aporta una parte del ingreso
+
+El gráfico de categorías permite al propietario observar de dónde proceden sus ingresos registrados. Esa distribución no demuestra por sí sola rentabilidad: para revisar el margen necesita considerar el costo de mercadería y, para una utilidad neta, también los demás gastos del negocio.
+
+## Conceptos que conviene distinguir
+
+| Concepto | Cómo debe leerse |
+|---|---|
+| Venta y línea de venta | Una operación puede incluir varios productos; cada fila de detalle no es una venta adicional |
+| Cantidad y dinero | Las unidades vendidas y el importe monetario son medidas distintas, aunque aparezcan en un mismo gráfico |
+| Producto y lote | Un producto puede tener varias entradas; un lote agotado no implica que todo el producto esté agotado |
+| Stock crítico | En el reporte se utiliza el umbral de hasta tres unidades disponibles; es una regla del prototipo |
+| Valor del inventario mostrado | Se calcula a precio de venta; no representa automáticamente el costo de adquisición |
+| Sin movimiento | Depende del período elegido y de la existencia de ventas registradas |
+| Ganancia mostrada | Es margen bruto según el costo guardado, antes de gastos operativos e impuestos |
+| Total de un Top | Corresponde al conjunto de productos elegido, no necesariamente a todo el negocio |
+| Transacciones por categoría | Una venta puede aparecer en más de una categoría; las filas no se suman para obtener ventas únicas |
+
+Los filtros también importan: un mes parcial y un mes completo no son equivalentes, y algunos KPI superiores mantienen el resumen general mientras la tabla muestra el filtro aplicado.
+
+## Datos ficticios y archivos de consulta
+
+La cuenta de demostración reúne categorías, productos, lotes y ventas para poblar los distintos módulos. También se recorrieron desde la interfaz el alta de un producto, una entrada y una venta. Las pantallas conservan sus registros y muestran su relación.
+
+El [resumen de la demostración](../datos/resumen-demostracion.json) y el [CSV ficticio](../datos/ventas-simuladas-noviembre.csv) se conservan como consulta adicional. No son el resultado principal del caso ni una base de investigación sobre negocios reales. En el CSV, el encabezado heredado «Total Venta» representa el subtotal de cada línea: para revisar una operación completa deben agruparse sus filas por ID.
+
+El alcance mostrado incluye CSV. PDF figura como Próximamente. Cuando los costos cambian entre lotes, el método de valoración requiere una revisión adicional, como se explica en [arquitectura](ARQUITECTURA.md#qué-ocurre-al-registrar-una-venta).
+
+[Recorrido visual](RECORRIDO_VISUAL.md) · [Resultados y aprendizajes](RESULTADOS_Y_APRENDIZAJES.md).

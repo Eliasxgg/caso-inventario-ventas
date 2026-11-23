@@ -1,15 +1,47 @@
-# Mi participación y asistencia utilizada
+# Mi participación en QUANTY
 
-QUANTY fue un trabajo universitario grupal. Como punto de partida revisamos un ERP en PHP descargado de una referencia de YouTube. Decidimos reconstruir la propuesta con Laravel, trabajando paso a paso en los datos, conexiones y pantallas con asistencia importante de IA: preguntábamos qué hacía el código, proponíamos cambios y copiábamos y ajustábamos fragmentos.
+## Trabajo grupal y enfoque de mi aporte
 
-El contexto académico incluye propuesta de valor, Canvas, comparación de competidores y estructura de costos. Estos documentos ayudan a entender la finalidad del sistema; los presupuestos y las cifras de casos externos no son ingresos, clientes o mejoras de productividad obtenidos por QUANTY.
+QUANTY fue un trabajo universitario grupal de Emprendedurismo. Participé en la construcción de una propuesta para digitalizar inventario y ventas de pequeños negocios y en el trabajo paso a paso para convertirla en una aplicación.
 
-Me interesa presentar el proyecto por la relación entre procesos de negocio, bases de datos, inventario y reportes, además de su preparación con Docker. El código respalda exposición académica a PHP/Laravel, MVC, MySQL y autenticación; su presencia no demuestra dominio independiente de todas esas tecnologías.
+Partimos de una referencia ERP en PHP de YouTube y decidimos reconstruir la propuesta con Laravel. Fuimos trabajando con asistencia de IA, preguntando qué hacía el código, solicitando cambios y ajustando la base, las conexiones y la interfaz. No fue simplemente descargar el sistema y conservarlo sin cambios.
 
-La preparación de portafolio de noviembre de 2026 también fue asistida: entorno local aislado, datos ficticios, correcciones observadas, pruebas y documentación. La población histórica se creó por un seeder; el alta de la granola, su entrada y la venta de $5.80 se realizaron desde la interfaz. Distingo ambas cosas para que las capturas sean trazables.
+## Datos y lógica de operación
 
-La referencia exacta del video y sus condiciones de uso siguen pendientes de identificar. No atribuyo propiedad exclusiva sobre dependencias, recursos de terceros o trabajo del equipo. Este caso documental no concede derechos de redistribución sobre material ajeno ni presenta la implementación como desarrollo autónomo o experiencia laboral formal.
+Uno de los conocimientos que trabajé fue **cómo relacionar las tablas de un mini ERP en MySQL**. El negocio no se representa en una sola tabla: un producto pertenece a una clasificación, puede recibir varias entradas y aparece en detalles de distintas ventas.
+
+Comprendí la diferencia entre definir el producto y registrar una entrada de mercadería. También la relación entre una venta, su detalle y el inventario que queda disponible. En ese proceso trabajé la lógica **FIFO**, que consume primero las existencias de los lotes más antiguos.
+
+El registro e inicio de sesión también forman parte de lo que recuerdo comprender: el propietario crea una cuenta, accede a la aplicación y trabaja con la información asociada a ella.
+
+## Mi participación en los reportes
+
+En los reportes mi aporte estuvo en **definir qué información queríamos mostrar, de dónde debía obtenerse y cómo presentarla**. Indicábamos a la IA qué registros nos interesaban, qué relaciones debían considerarse y qué debía comunicar un reporte, una tabla o un gráfico.
+
+Esto es diferente de escribir las consultas directamente. La implementación del código fue asistida; mi participación se concentró en la lógica del resultado solicitado. Por ejemplo, que el propietario pudiera revisar ventas de un período, identificar productos sin movimiento o relacionar una venta con las existencias.
+
+## Lo que aprendí y el nivel con el que lo presento
+
+| Área | Aprendizaje que puedo vincular a QUANTY |
+|---|---|
+| MySQL y modelo relacional | Tablas y relaciones de un mini ERP: cuentas, categorías, productos, entradas, ventas y detalles |
+| Registro e inicio de sesión | Recorrido de creación y uso de una cuenta para acceder a la información del negocio |
+| Entradas y ventas | Diferenciar datos del catálogo, recepción de unidades y salida por venta |
+| FIFO | Comprender que las salidas consumen primero las existencias de los lotes más antiguos |
+| Reportes y gráficos | Traducir necesidades del negocio a información que debía obtenerse y mostrarse, con implementación asistida |
+
+Presento estos puntos como formación académica y práctica inicial. Mi siguiente paso en Laravel es profundizar en sus rutas, controladores, modelos y vistas. Por ahora distingo la arquitectura descrita del proyecto de los conocimientos personales que ya puedo vincular a mi participación.
+
+## Uso de IA
+
+La IA tuvo un papel importante en código, interfaz y datos. Trabajábamos paso a paso, pidiendo explicaciones y cambios y copiando y ajustando fragmentos. En los reportes también ayudó a transformar lo que solicitábamos en consultas, cálculos y gráficos.
+
+Mi aporte consistió en participar en los requisitos, orientar el comportamiento esperado y revisar lo que necesitábamos mostrar, dentro de un trabajo grupal. Mantengo esa distinción para que el caso respalde mi formación sin atribuirme programación autónoma ni una experiencia laboral que no corresponde al proyecto.
 
 ## Equipo académico
 
-Elias Alexander Garcia Garcia, Cristian Leandro Rodriguez Vasquez, Ever Alexis Corleto Guardado y Samuel Enrique Alvarado Romero. Conservo los créditos del trabajo grupal sin asignar responsabilidades individuales adicionales que no estén confirmadas.
+Elias Alexander Garcia Garcia, Cristian Leandro Rodriguez Vasquez, Ever Alexis Corleto Guardado y Samuel Enrique Alvarado Romero.
+
+La lista conserva los créditos del trabajo grupal. La referencia exacta de YouTube y los permisos de los materiales deben identificarse antes de redistribuir públicamente toda la implementación; este repositorio presenta el caso y sus evidencias.
+
+[Resultados y aprendizajes concretos](RESULTADOS_Y_APRENDIZAJES.md) · [Contexto del proyecto](CONTEXTO_DEL_PROYECTO.md).
